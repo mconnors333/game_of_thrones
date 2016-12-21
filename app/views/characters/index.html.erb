@@ -1,0 +1,4 @@
+<h1>Here are the Characters</h1>
+<% @characters.each do |character| %>
+  <div><%= link_to character.name, character_path(character) %> - <%= character.house.name %></div>
+<% end %>

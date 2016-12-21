@@ -1,0 +1,7 @@
+<h1><%= @character.name %></h1>
+<h2><%= @character.house.name %></h2>
+<%= link_to "Edit", edit_character_path(@character) %>
+<%= link_to "Delete", @character, method: :delete, data: { confirm: 'Are you sure?' }%>
+<div class="character">
+  <%= image_tag @character.img_url %>
+</div>
